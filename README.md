@@ -2,13 +2,13 @@
 A collection of Scripts for OmniFocus 2 by FradSer.
 
 ## Templates.scpt
-Templates.scpt is improved the [old version](https://github.com/lemonmade/templates) which made by Chris Sauvé of [pxldot](http://pxldot.com).
+The new version of Templates.scpt is improved [the old version](https://github.com/lemonmade/templates) which made by Chris Sauvé of [pxldot](http://pxldot.com).
 
 ### Screencast
 A screencast illustrating almost all of the features of this script can be seen on the [Template project's page](http://cmsauve.com/projects/templates/) of Chris Sauvé's website. **I'm working for a Chinese version.**
 
 ### Why I Improved Templates.scpt
-[Templates.scpt](https://github.com/lemonmade/templates) is a wonderful work but the last date it updated is June 5, 2014. I have some new ideas for it and now working. So I built Templates 2.scpt.
+[Templates.scpt](https://github.com/lemonmade/templates) is a wonderful work but the last updated date is June 5, 2014. I have some new ideas for it and now working. So I built this one.
 
 ### Something about Script
 Please read [this page](https://github.com/lemonmade/templates) and [this page](http://cmsauve.com/projects/templates/) by Chris Sauvé.
@@ -26,3 +26,4 @@ OmniFocus has another way to run scripts, and it's even easier than the method d
 ### TODO
 - [x] Useing the script whatever the status of Templates folder is active or dropped.
 - [ ] Auto associated contacts matched.
+- [ ]
