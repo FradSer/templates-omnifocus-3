@@ -1,7 +1,4 @@
-# Scripts for OmniFocus 2 by FradSer
-A collection of Scripts for OmniFocus 2 by FradSer.
-
-## Templates.scpt
+# Templates for OmniFocus 2 by FradSer
 The new version of Templates.scpt is improved [the old version](https://github.com/lemonmade/templates) which made by Chris Sauvé of [pxldot](http://pxldot.com).
 
 ### Screencast
