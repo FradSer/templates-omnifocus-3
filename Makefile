@@ -1,5 +1,5 @@
 build: Templates.applescript
-	rm Templates.scpt
+	rm -f Templates.scpt
 	osacompile -o Templates.scpt Templates.applescript
 # Take an image and make the image its own icon:
 	sips -i icon.png
