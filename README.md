@@ -118,6 +118,9 @@ OmniFocus has another way to run scripts, and it's even easier than the method d
 
 
 ## Version History
+- **0.5.0** (January 26, 2018): Bug fixes and change some defaults.
+  - Slight breaking change: The default Templates Folder is now pluralized (Templates).
+
 - **0.4.1** (June 17, 2013): Bug fixes. Added custom date text formats and the ability to use and/ or with conditional statements.
 
 - **0.4.0** (March 31, 2013): Added conditional deletion/ completion.
