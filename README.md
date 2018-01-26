@@ -155,6 +155,9 @@ OmniFocus has another way to run scripts, and it's even easier than the method d
 - **0.1.0** (January 18, 2013): Initial release
 
 
+## Git Notes
+(January 26, 2018) - I added a `.gitattributes` file to cause Git to successfully diff Applescript files using `osadecompile` to get just the text of the script. I got this method from [this StackOverflow answer](https://stackoverflow.com/questions/7641806/how-would-you-put-an-applescript-script-under-version-control/15231630#15231630). -- mike.mclean@pobox.com
+
 ## License
 
 MIT
