@@ -11,3 +11,7 @@ build: Templates.applescript
 	SetFile -a C Templates.scpt
 # clean up.
 	rm tmpicns.rsrc
+
+install: build
+	rm -f ~/Library/Application\ Scripts/com.omnigroup.OmniFocus2/Templates.scpt
+	cp Templates.scpt ~/Library/Application\ Scripts/com.omnigroup.OmniFocus2/Templates.scpt
