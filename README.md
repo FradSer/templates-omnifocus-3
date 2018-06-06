@@ -23,4 +23,4 @@ OmniFocus has another way to run scripts, and it's even easier than the method d
 ### To-do
 - [x] Useing the script whatever the status of Templates folder is active or dropped.
 - [ ] Auto associated contacts matched.
-- [ ] ***Rewrite by OmniJS.*
+- [ ] ***Rewrite by OmniJS.**
