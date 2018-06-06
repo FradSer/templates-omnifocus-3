@@ -20,6 +20,7 @@ Your first option is to run the script from Apple's AppleScript menu. If you don
 
 OmniFocus has another way to run scripts, and it's even easier than the method described above. Once the script is installed, go to OmniFocus and right- (control-) click on the toolbar (the gray bar at the top of the window that shows icons for your inbox, projects, and more). Choose "Customize Toolbar..." from the contextual menu that pops up. You will then see a list of all items that can be put in your menubar, including (at the bottom) any scripts that you have installed. Drag the script anywhere on the toolbar and click "Done". You now have one-click access to run this script!
 
-### TODO
+### To-do
 - [x] Useing the script whatever the status of Templates folder is active or dropped.
 - [ ] Auto associated contacts matched.
+- [ ] ***Rewrite by OmniJS.*
