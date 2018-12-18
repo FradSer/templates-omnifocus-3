@@ -2,10 +2,7 @@
 
 ## Important Note
 
-I,
-
-
-[SkydiveMike](https://github.com/SkydiveMike) do actively use this script and will maintain it as best as possible. Pull requests are welcome as is general contact requests via GitHub or email.
+I, [SkydiveMike](https://github.com/SkydiveMike) do actively use this script and will maintain it as best as possible. Pull requests are welcome as is general contact requests via GitHub or email.
 
 Most of the rest of this README is from the original [maintainer, Chris Sauvé](https://github.com/lemonmade), to whom we all owe a debt of gratitude.
 
