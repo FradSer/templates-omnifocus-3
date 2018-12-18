@@ -2,10 +2,12 @@
 
 ## Important Note
 
-I no longer actively maintain this script, and haven't for some time. Further, I no longer use OmniFocus (nothing against it, my needs/ tastes just changed). If anyone is interested in fixing bugs, improving the script, or making updates of any kind, please feel free to fork this for yourself or message me about taking over this repo.
+I,
 
-## Screencast
-If you need help understanding the features of this script, you can watch a [video of the script in action](https://www.youtube.com/watch?v=avu2Gaqy3Uo) to get you up to speed.
+
+[SkydiveMike](https://github.com/SkydiveMike) do actively use this script and will maintain it as best as possible. Pull requests are welcome as is general contact requests via GitHub or email.
+
+Most of the rest of this README is from the original [maintainer, Chris Sauvé](https://github.com/lemonmade), to whom we all owe a debt of gratitude.
 
 ## Why I Built This Script
 OmniFocus is an incredible piece of software. I and countless others rely on it every day to manage increasingly hectic lives and complex, multi-facetted projects. A central tenet of "good" productivity tools (as opposed to those we simply indulge in for their own sake, the "productivity porn") is that they reduce friction. This script is an effort to reduce one of the largest sources of friction remaining in my OmniFocus setup: maintaining and creating projects that don't recur on even intervals, but occur frequently enough that their planning and capture becomes a time sink. The script allows you to create templates as simple or complex as you need them to be, and to quickly create instances of those templates so you can get back to what's important.
