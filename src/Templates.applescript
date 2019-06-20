@@ -1,6 +1,5 @@
 (*
 	TEMPLATES.SCPT
-	By Frad Lee of [Hello from FradSer](http://fradser.me).
 	Improved the TEMPLATES.SCPT by Chris Sauve of [pxldot](http://pxldot.com).
 	See README for details.
 *)
@@ -46,8 +45,6 @@ WEEKDAY: "W" - Weekday as text (i.e., Monday)
 property firstRun : true
 property specialTemplateFolder : null
 
-
-
 --        ___          ___                     ___
 --       /__/\        /  /\       ___         /__/\
 --      |  |::\      /  /::\     /  /\        \  \:\
@@ -60,8 +57,7 @@ property specialTemplateFolder : null
 --      \  \:\       \  \:\        \__\/     \  \:\
 --       \__\/        \__\/                   \__\/
 
-
--- If not the first time run the script then set the status of template folder to Active.
+-- If not the first time run the script then set the status of templates folder to Active.
 try
 	tell application "OmniFocus"
 		tell default document
@@ -107,8 +103,6 @@ try
 	-- Get the selected project based on the user's list selection
 	set projectPosition to my selectionPositions(selectedProject, projectNameList)
 	set selectedProject to item projectPosition of templateProjectList
-
-
 
 	tell application "OmniFocus"
 		tell default document
@@ -232,7 +226,8 @@ on createTemplateProjectList()
 					set templateFolderNameList to my nameListFromFolders(templateFolderList)
 
 					-- No folders that match required criteria
-					if length of templateFolderNameList is 0 then my die("You do not have any non-dropped folders. Please create a \"Templates\" folder and at least one project to use this script.")
+					if length of templateFolderNameList is 0 then
+						my die("You do not have any non-dropped folders. Please create a \"Templates\" folder and at least one project to use this script.")
 
 					-- Get user-selected special template folder and remember it
 					set selectedTemplateFolder to my promptWithList(templateFolderNameList, "Choose Template Folder", "No obvious template folders were found. Please select the folder in which you store templates.", "Set as Template Folder")
@@ -300,8 +295,6 @@ on findDefaultFolder(projectNote)
 	end tell
 end findDefaultFolder
 
-
-
 --        ___          ___                   ___          ___
 --       /  /\        /  /\         ___     /__/\        /  /\
 --      /  /:/_      /  /:/_       /  /\    \  \:\      /  /::\
@@ -313,7 +306,6 @@ end findDefaultFolder
 --     \__\/ /:/    \  \:\/:/       \  \:\\  \:\/:/    \  \:\
 --       /__/:/      \  \::/         \__\/ \  \::/      \  \:\
 --       \__\/        \__\/                 \__\/        \__\/
-
 
 -- Create a limited set of projects in the passed containing folder.
 -- This creation limits the matching projects to those that 1) don't
@@ -402,8 +394,6 @@ on selectionPositions(selectList, originalList)
 
 	return positionOfSelections
 end selectionPositions
-
-
 
 --        ___                   ___                     ___          ___
 --       /  /\         ___     /  /\       ___         /__/\        /  /\
@@ -527,8 +517,6 @@ on findReplace(theText, find, replace)
 	return theText
 end findReplace
 
-
-
 --                     ___          ___                     ___
 --       _____        /  /\        /  /\       ___         /  /\
 --      /  /::\      /  /::\      /  /:/_     /  /\       /  /:/
@@ -568,13 +556,6 @@ on syncit()
 		synchronize
 	end try
 end syncit
-
-
-
-
-
-
-
 
 --        ___          ___                       ___       ___          ___
 --       /__/\        /  /\                     /  /\     /  /\        /  /\
@@ -772,13 +753,6 @@ on replaceVariables(theText, theVariables, theReplacements)
 	return theText
 end replaceVariables
 
-
-
-
-
-
-
-
 --        ___       ___          ___       ___                       ___                   ___
 --       /  /\     /  /\        /  /\     /__/\                     /  /\         ___     /  /\
 --      /  /::\   /  /::\      /  /::\    \  \:\                   /  /::\       /  /\   /  /:/_
@@ -901,10 +875,6 @@ on populateItem(theItem, delimCleanedVariables, cleanedVariables, theReplacement
 	end tell
 end populateItem
 
-
-
-
-
 --       _____         ___                   ___          ___
 --      /  /::\       /  /\         ___     /  /\        /  /\
 --     /  /:/\:\     /  /::\       /  /\   /  /:/_      /  /:/_
@@ -940,7 +910,6 @@ on checkingForDateInformation(theItem, theVariables, theReplacements)
 
 			-- Any of the someTime styles can also have -W/-S to specify
 			-- that weekends and special days (respectively) shouldn't be counted
-
 
 			-- State variables
 			set dueOrStart to null
@@ -1194,12 +1163,6 @@ on calculateExtraTime(str, dueOrStart, specialAdjustForWeekends, specialAdjustFo
 	end tell
 end calculateExtraTime
 
-
-
-
-
-
-
 --        ___          ___                                ___
 --       /__/\        /  /\         ___     _____        /  /\
 --      |  |::\      /  /::\       /__/|   /  /::\      /  /:/_
@@ -1336,16 +1299,6 @@ on determineComparison(theNote)
 	if theNote contains ">" then return ">"
 end determineComparison
 
-
-
-
-
-
-
-
-
-
-
 on workingTheContext(theContext, theVariables, theReplacements)
 	tell application "OmniFocus"
 		tell default document
@@ -1392,13 +1345,6 @@ on workingTheContext(theContext, theVariables, theReplacements)
 		end tell
 	end tell
 end workingTheContext
-
-
-
-
-
-
-
 
 --       _____         ___                   ___          ___
 --      /  /::\       /  /\         ___     /  /\        /  /\
@@ -1464,4 +1410,3 @@ on customDateStyle(theDate)
 	set my text item delimiters to storeDelimiters
 	return returnDate
 end customDateStyle
-
