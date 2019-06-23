@@ -1,8 +1,7 @@
-build: Templates.applescript
-	rm -f Templates.scpt
-	osacompile -o Templates.scpt Templates.applescript
-	./set-image.py icon.png Templates.scpt
-
-install: build
-	rm -f ~/Library/Application\ Scripts/com.omnigroup.OmniFocus3/Templates.scpt
-	cp Templates.scpt ~/Library/Application\ Scripts/com.omnigroup.OmniFocus3/Templates.scpt
+rm -f ../Templates.scpt
+osacompile -o Templates.scpt Templates.applescript
+echo "read 'icns' (-16455) \"Icon.icns\";" >> Icon.rsrc
+Rez -a Icon.rsrc -o Templates.scpt
+SetFile -a C Templates.scpt
+rm Icon.rsrc
+mv Templates.scpt ../
