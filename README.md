@@ -1,3 +1,5 @@
+**💀This project now join [FradSer/automation-omnifocus-3](https://github.com/FradSer/automation-omnifocus-3)**
+
 # Templates.scpt
 
 ## Important Note
